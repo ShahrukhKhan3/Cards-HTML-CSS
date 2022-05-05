@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        margin: 100px;
+      }
+      .container {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+      }
+      .cardimage {
+        background-color: blueviolet;
+        height: 150px;
+        background-size: cover;
+      }
+      .card {
+        background-color: white;
+        margin: 10px;
+        width: 270px;
+        height: 470px;
+        border-radius: 20px;
+      }
+      .card1 {
+        background-image: url("./pizza.jpg");
+      }
+      .card2 {
+        background-image: url("./burger.jpg");
+      }
+      .card3 {
+        background-image: url("./shwarma.jpg");
+      }
+      h1 {
+        padding: 10px;
+      }
+      .card p {
+        padding: 10px;
+      }
+      .card a {
+        background-color: black;
+        color: blanchedalmond;
+        padding: 15px 20px;
+        display: block;
+        text-align: center;
+        margin: 20px 50px;
+      }
+      .card:hover {
+        background-color: rgb(62, 62, 62);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="card">
+        <div class="cardimage card2"></div>
+        <h1>Burger</h1>
+        <p>$500</p>
+        <p>
+          Burger King is an American multinational chain of Burger restaurants
+        </p>
+        <a href="/">Read More</a>
+      </div>
+      <div class="card">
+        <div class="cardimage card1"></div>
+        <h1>Pizza</h1>
+        <p>$1500</p>
+        <p>
+          Burger King is an American multinational chain of Shawarma restaurants
+        </p>
+        <a href="/">Read More</a>
+      </div>
+      <div class="card">
+        <div class="cardimage card3"></div>
+        <h1>Shawarma</h1>
+        <p>$100</p>
+        <p>
+          Burger King is an American multinational chain of Pizza restaurants
+        </p>
+        <a href="/">Read More</a>
+      </div>
+    </section>
+  </body>
+</html>
